@@ -1,0 +1,15 @@
+concurrent = 1
+
+[[runners]]
+  url = "https://gitlab.com/ci"
+  token = "b662dda9a6d9de1910b86796e0a8d7"
+  tls-skip-verify = false
+  tls-ca-file = ""
+  name = "travis"
+  executor = "shell"
+  [runners.ssh]
+  [runners.docker]
+    image = ""
+    privileged = false
+  [runners.parallels]
+    base_name = ""

@@ -1,0 +1,14 @@
+sudo: false
+services:
+  - docker
+addons:
+  apt:
+    packages:
+      - doxygen
+      - graphviz
+
+script:
+ - wget https://gitlab-ci-multi-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-ci-multi-runner-linux-amd64
+ - mv .gitlab-runner ~
+ - chmod +x gitlab-ci-multi-runner-linux-amd64
+ - $PWD/gitlab-ci-multi-runner-linux-amd64 -l debug run
