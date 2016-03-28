@@ -4,6 +4,7 @@ services:
 addons:
   apt:
     packages:
+      - cloc
       - doxygen
       - graphviz
 
